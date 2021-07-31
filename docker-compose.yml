@@ -5,3 +5,5 @@ services:
         tty: true # ②コンテナの永続化
         volumes:
             - ./app:/go/src/app # ③マウントディレクトリ
+        environment:
+            - "GOPATH=/go"
